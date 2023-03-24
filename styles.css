@@ -25,3 +25,40 @@ body{
     color: var(--dark-color);
     background-color: var(--bg-color);
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+header nav, nav ul{
+    display: flex;
+    gap: 2em;
+}
+header nav{
+    line-height: 80px;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 1.35em;
+    font-weight: 600;
+}
+.logo span{
+    color: var(--main-color);
+}
+nav ul{
+    margin-left: -4em;
+}
+nav ul li a:hover{
+    color: var(--main-color);
+}
+.switcher{
+    display: flex;
+    align-items: center;
+}
