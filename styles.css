@@ -110,3 +110,41 @@ nav ul li a:hover{
     -webkit-transform: translateX(26px);
     transform: translateX(26px);
 }
+.split{
+    position: relative;
+    display: flex;
+    padding-top: 10em;
+}
+.split > div{
+    flex: 1 0 50%;
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    position: relative;
+    padding-right: 10em;
+    gap: 2em;
+}
+.left::before, .left::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: .25;
+}
+.left::before{
+    top: 2em;
+    right: 0;
+    height: 100%;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    border-color: var(--light-color);
+    border-bottom-right-radius: 3em;
+}
+
+
+
+.day-night{
+    position: absolute;
+}
