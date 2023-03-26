@@ -10,6 +10,12 @@
     --shadow: rgb(55 66 250 / 30%) 0 40px 40px -10px;
     --font-smaller: 12px;
 }
+[data-theme="dark"]{
+    --light-color: #727597;
+    --lighter-color: #0000bd;
+    --dark-color: #eff4ff;
+    --bg-color:  #1c2028;
+}
 *{
     margin: 0;
     padding: 0;
@@ -237,6 +243,13 @@ nav ul li a:hover{
 .day-night span{
     right: 0;
     top: 0;
+    background: var(--bg-color);
     transform: translate3d(75px, -75px, 0) scale(0.9);
     transition: transform .3s;
+}
+[data-theme="dark"] .day-night span{
+    transform: translate3d(13px, -13px, 0) scale(0.9);
+}
+[data-theme="dark"] .day-night{
+    background: linear-gradient(165deg, #a5fecb, #20bdff, #5433ff);
 }
