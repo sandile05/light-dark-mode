@@ -142,8 +142,42 @@ nav ul li a:hover{
     border-color: var(--light-color);
     border-bottom-right-radius: 3em;
 }
-
-
+.left::after{
+    bottom: 2em;
+    right: 100%;
+    height: 2px;
+    background-color: var(--light-color);
+}
+.left h1{
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -2px;
+}
+.left p{
+    color: var(--light-color)
+}
+.left nav a{
+    font-weight: 600;
+    color: var(--main-color);
+    padding: 0 2em;
+    line-height: 46px;
+    border-radius: 7px;
+    display: inline-flex;
+    -webkit-transition: border-radius .3s, color .3s;
+    transition: border-radius .3s, color .3s;
+}
+.left nav a.button{
+    background-color: var(--main-color);
+    color: white;
+    box-shadow: var(--shadow);
+}
+.left nav a:hover{
+    border-radius: 25px;
+}
+.left nav a:not(.button):hover{
+    color: var(--dark-color);
+} 
 
 .day-night{
     position: absolute;
